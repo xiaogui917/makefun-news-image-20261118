@@ -90,7 +90,7 @@ def draw_wrapped_text(draw, text, x, y, max_w, font, fill=TEXT_BODY, line_spacin
 def draw_footer(draw, y=994):
     """Draw the newspaper bottom bar."""
     draw.rectangle([0, y, WIDTH, HEIGHT], fill=BORDER_DARK)
-    footer_text = "THE INTERNATIONAL CHRONICLE  •  VERIFIED WORLD NEWS RECORD  •  WEDNESDAY, 18 NOVEMBER 2026"
+    footer_text = "THE WORLD CHRONICLE  •  VERIFIED WORLD NEWS RECORD  •  WEDNESDAY, 18 NOVEMBER 2026"
     font = get_font(12, bold=True)
     bbox = draw.textbbox((0, 0), footer_text, font=font)
     tw = bbox[2] - bbox[0]
